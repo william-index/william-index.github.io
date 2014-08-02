@@ -1,0 +1,19 @@
+:plain
+  ---
+  layout: default
+  ---
+
+.home
+
+  %h1 Posts
+
+  %ul.posts
+    :plain
+      {% for post in site.posts %}
+    %li
+      %span.post-date {{ post.date | date: "%b %-d, %Y" }}
+      %a.post-link{:href=>"{{ post.url | prepend: site.baseurl }}"} {{ post.title }}
+    :plain
+      {% endfor %}
+
+  %p.rss-subscribe subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>

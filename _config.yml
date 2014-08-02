@@ -1,9 +1,9 @@
 # Site settings
 title: The William Anderson's Blog
-email: your-email@domain.com
-description: "More COming soon?"
+email: thewilliamanderson@gmail.com
+description: "More Coming soon?"
 baseurl: ""
-url: "http://yourdomain.com"
+url: "http://thewilliamanderons.com"
 twitter_username: jekyllrb
 github_username:  jekyll
 
