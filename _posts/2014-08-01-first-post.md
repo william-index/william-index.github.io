@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My First Post Will Not be My First Post"
+title:  "My First Post Will Not be My First Post."
 date:   2014-08-01 21:33:59
 categories: hello_world hello world
 ---
