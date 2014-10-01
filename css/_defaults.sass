@@ -1,0 +1,54 @@
+/* defaults */
+*
+  margin: 0px
+  padding: 0px
+  border: 0px
+  font-weight: normal
+  text-indent: 0px
+  text-decoration: none
+
+header, section, footer, aside, nav, article, figure
+  display: block
+
+.clear
+  clear: both
+
+//mixins
+@mixin border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius:    $radius
+  -ms-border-radius:     $radius
+  -o-border-radius:      $radius
+  border-radius:         $radius
+
+//quicker font size/height
+@mixin font($size,$height)
+  font-size:   $size+px
+  line-height: $height+px
+
+
+@mixin trans($props)
+  transition:         $props
+  -webkit-transition: $props
+
+
+@mixin glow($color)
+  box-shadow: 0px 0px 10px $color
+  -webkit-box-shadow: 0px 0px 10px $color
+  -moz-box-shadow: 0px 0px 10px $color
+
+
+@mixin box-shadow($x, $y, $blur, $color)
+  box-shadow:$x $y $blur $color
+  -moz-box-shadow: $x $y $blur $color
+  -webkit-box-shadow: $x $y $blur $color
+  -o-box-shadow: $x $y $blur $color
+  -ms-box-shadow: $x $y $blur $color
+
+
+@mixin text-shadow($x, $y, $blur, $color)
+  text-shadow:$x $y $blur $color
+  -moz-text-shadow: $x $y $blur $color
+  -webkit-text-shadow: $x $y $blur $color
+  -o-text-shadow: $x $y $blur $color
+  -ms-text-shadow: $x $y $blur $color

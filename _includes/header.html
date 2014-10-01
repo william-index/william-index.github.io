@@ -1,12 +1,27 @@
-<header class='site-header'>
-  <div class='wrap'>
-    <a class='site-title' href='{{ site.baseurl }}/'>{{ site.title }}</a>
-    <nav class='site-nav'>
-      <div class='trigger'>
-        {% for page in site.pages %}
-          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-        {% endfor %}
-      </div>
+<header class='top_nav'>
+  <div class="wrap">
+    <a class='logo' href='{{ site.baseurl }}/'>
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="45px" height="45px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve">
+        <rect x="0" y="0" fill="none" width="60" height="60"></rect>
+        <rect x="8.571" y="17.223" fill="#757575" width="8.253" height="8.253"></rect>
+        <rect x="8.571" y="43.176" fill="#D75B5B" width="8.253" height="8.253"></rect>
+        <rect x="8.571" y="8.572" fill="#757575" width="8.253" height="8.252"></rect>
+        <rect x="17.223" y="34.525" fill="#D75B5B" width="8.252" height="8.253"></rect>
+        <rect x="17.223" y="25.874" fill="#757575" width="8.252" height="8.252"></rect>
+        <rect x="25.874" y="25.874" fill="#D75B5B" width="8.253" height="8.252"></rect>
+        <rect x="25.874" y="17.223" fill="#757575" width="8.253" height="8.253"></rect>
+        <rect x="43.176" y="8.572" fill="#757575" width="8.253" height="8.252"></rect>
+        <rect x="43.176" y="17.223" fill="#757575" width="8.253" height="8.253"></rect>
+        <rect x="43.176" y="43.176" fill="#D75B5B" width="8.253" height="8.253"></rect>
+        <rect x="34.525" y="25.874" fill="#757575" width="8.252" height="8.252"></rect>
+        <rect x="34.525" y="34.525" fill="#D75B5B" width="8.252" height="8.253"></rect>
+      </svg>
+    </a>
+    <a class='title' href='{{ site.baseurl }}/'><h1><span>The William Anderson</span>'s Blog</h1></a>
+    <nav>
+      {% for page in site.pages %}
+        {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
+      {% endfor %}
     </nav>
   </div>
 </header>
