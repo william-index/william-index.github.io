@@ -1,12 +1,14 @@
 ---
 layout: default
 ---
-<div class='post'>
-  <header class='post-header'>
+<article class="interior">
+  <header>
     <h1>{{ page.title }}</h1>
-    <h1>{{ page.custom_sub }}</h1>
+    <span class='date'>{{ page.date | date: "%b %-d, %Y" }}</span>
   </header>
-  <article class='post-content'>
+  <main>
     {{ content }}
-  </article>
-</div>
+  </main>
+  <div class="clear"></div>
+</article>
+<div class="clear"></div>

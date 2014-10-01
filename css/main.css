@@ -1,148 +1,176 @@
-/* Base */
-/* ----------------------------------------------------------*/
+/* defaults */
 * {
-  margin: 0;
-  padding: 0; }
-
-html, body {
-  height: 100%; }
-
-body {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 300;
-  background-color: #fdfdfd; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
-  font-weight: 400; }
-
-a {
-  color: #D75B5B;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-weight: normal;
+  text-indent: 0px;
   text-decoration: none; }
 
-a:hover {
-  color: #000;
-  text-decoration: underline; }
+header, section, footer, aside, nav, article, figure {
+  display: block; }
 
-a:visited {
-  color: #205caa; }
-
-/* Utility */
-.wrap:before,
-.wrap:after {
-  content: "";
-  display: table; }
-
-.wrap:after {
+.clear {
   clear: both; }
 
-.wrap {
-  max-width: 800px;
-  padding: 0 30px;
-  margin: 0 auto;
-  zoom: 1; }
-
+/* Base */
+/* ----------------------------------------------------------*/
 /******************************/
 /** GENERAL STYLING ***********/
 /******************************/
+* {
+  font-family: Helvetica, Arial, sans-serif; }
+
+body {
+  background: #E6E6E6; }
+
+.wrap {
+  margin: 0px auto;
+  width: 94%;
+  max-width: 700px;
+  padding: 0px 3%;
+  position: relative;
+  background: white; }
+
+a {
+  color: #D75B5B; }
+  a:hover {
+    color: black; }
+
 /* Site header */
 .top_nav {
   display: block;
   float: left;
+  position: relative;
+  float: left;
   width: 100%;
   height: 50px;
   background: white;
-  border-bottom: 4px solid #999; }
-  .top_nav .logo {
-    color: #D75B5B;
-    font-weight: bold; }
+  border-bottom: 4px solid #757575;
+  margin-bottom: 15px; }
+  .top_nav .logo, .top_nav h1 {
+    display: block;
+    float: left;
+    color: #757575;
+    font-weight: bold;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 30px;
+    line-height: 50px; }
+    .top_nav .logo span, .top_nav h1 span {
+      color: #757575;
+      font-weight: bold;
+      font-family: "Pathway Gothic One", sans-serif;
+      font-size: 30px;
+      line-height: 50px; }
+    .top_nav .logo:hover, .top_nav .logo:hover span, .top_nav h1:hover, .top_nav h1:hover span {
+      color: #D75B5B; }
+  .top_nav svg {
+    margin: 3px 15px 0px 0px; }
+  .top_nav nav {
+    display: block;
+    width: auto;
+    height: 50px;
+    position: absolute;
+    right: 5%;
+    top: 0px;
+    font-size: 14px;
+    line-height: 50px; }
+    .top_nav nav a {
+      font-size: 14px;
+      line-height: 50px;
+      font-family: Helvetica, Arial, sans-serif; }
 
-/* Page Content styles */
-/* ----------------------------------------------------------*/
-.page-content {
-  padding: 30px 0;
-  background-color: #fff; }
-
-/* Home styles */
-/* ----------------------------------------------------------*/
-.home h1 {
-  margin-bottom: 25px; }
-
-.posts {
-  list-style-type: none; }
-
-.posts li {
-  margin-bottom: 30px; }
-
-.posts .post-link {
-  font-size: 24px;
-  letter-spacing: -1px;
-  line-height: 1; }
-
-.posts .post-date {
+section#core {
   display: block;
-  font-size: 15px;
-  color: #818181; }
+  float: left;
+  margin: 0px auto;
+  width: 100%;
+  background: url("images/bg.png");
+  padding: 18px 0px; }
+  section#core .page_title, section#core #all_posts, section#core .rss-subscribe {
+    width: 100%;
+    display: block;
+    float: left; }
+  section#core .rss-subscribe {
+    margin-bottom: 20px;
+    text-transform: capitalize; }
+  section#core h1.page_title {
+    font-size: 2em;
+    border-bottom: 2px dashed #757575;
+    padding: 8px 0px;
+    margin-bottom: 15px; }
 
-/* Post styles */
-/* ----------------------------------------------------------*/
-.post-header {
-  margin: 10px 0 30px; }
+article {
+  display: block;
+  float: left;
+  width: 100%;
+  margin-bottom: 20px; }
+  article.interior header {
+    display: block;
+    float: left;
+    width: 100%;
+    border-top: 2px dashed #757575;
+    padding-top: 15px;
+    margin-top: 16px; }
+  article span.date {
+    font-size: 0.8em;
+    color: #757575; }
+  article h1 {
+    font-size: 1.6em;
+    border-bottom: 2px solid #D75B5B;
+    padding-bottom: 5px;
+    margin-bottom: 5px; }
+  article h2, article h3 {
+    font-size: 1.4em;
+    color: #757575;
+    border-bottom: 2px solid #D75B5B;
+    margin-top: 1em;
+    padding-bottom: 5px; }
+  article h3 {
+    font-size: 1.2em;
+    border-bottom: 1px solid #757575; }
+  article main {
+    display: block;
+    float: left;
+    margin-bottom: 2em; }
+  article p {
+    margin-top: 1em;
+    font-size: 1em;
+    line-height: 1.4em; }
+  article em {
+    font-style: italic; }
+  article strong {
+    font-weight: bold; }
+  article ul, article ol {
+    padding-left: 20px;
+    margin-top: 1em; }
+    article ul ul, article ul ol, article ol ul, article ol ol {
+      margin-top: 0px; }
+    article ul li, article ol li {
+      font-size: 1em;
+      line-height: 1.4em;
+      margin-bottom: 0.1em; }
 
-.post-header h1 {
-  font-size: 42px;
-  letter-spacing: -1.75px;
-  line-height: 1;
-  font-weight: 300; }
+footer.site_footer {
+  display: block;
+  float: left;
+  width: 100%;
+  background: #E6E6E6;
+  padding: 15px 0px;
+  border-top: 2px solid #757575;
+  margin-top: 20px; }
+  footer.site_footer .wrap {
+    background: none; }
 
-.post-header .meta {
-  font-size: 15px;
-  color: #818181;
-  margin-top: 5px; }
-
-.post-content {
-  margin: 0 0 30px; }
-
-.post-content > * {
-  margin: 20px 0; }
-
-.post-content h1,
-.post-content h2,
-.post-content h3,
-.post-content h4,
-.post-content h5,
-.post-content h6 {
-  line-height: 1;
-  font-weight: 300;
-  margin: 40px 0 20px; }
-
-.post-content h2 {
-  font-size: 32px;
-  letter-spacing: -1.25px; }
-
-.post-content h3 {
-  font-size: 26px;
-  letter-spacing: -1px; }
-
-.post-content h4 {
-  font-size: 20px;
-  letter-spacing: -1px; }
-
-.post-content blockquote {
-  border-left: 4px solid #e8e8e8;
-  padding-left: 20px;
-  font-size: 18px;
-  opacity: .6;
-  letter-spacing: -1px;
-  font-style: italic;
-  margin: 30px 0; }
-
-.post-content ul,
-.post-content ol {
-  padding-left: 20px; }
-
+/***********************/
+/* MEDIA QUERIES *******/
+/***********************/
+@media screen and (max-width: 600px) {
+  .top_nav h1 span {
+    display: none; } }
+/***********************/
+/* SYNTAX HIGHLIGHTING */
+/***********************/
 .post pre,
 .post code {
   border: 1px solid #d5d5e9;
@@ -156,10 +184,6 @@ a:visited {
 
 .post code {
   padding: 1px 5px; }
-
-.post ul,
-.post ol {
-  margin-left: 1.35em; }
 
 .post pre code {
   border: 0;
